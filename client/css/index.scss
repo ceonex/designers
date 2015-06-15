@@ -360,9 +360,9 @@ body {
 }
 
 .profile-top {
-  margin-top: -90px;
-  margin-bottom: 20px;
+  margin-top: -110px;
 }
+
 .profile-top a {
   position: absolute;
   top: 39px;
@@ -458,5 +458,12 @@ body {
   #wrapper.toggled #page-content-wrapper {
     position: relative;
     margin-right: 0;
+  }
+
+}
+
+@media(max-width:768px) {
+  .profile-top {
+    margin-top: -90px;
   }
 }
