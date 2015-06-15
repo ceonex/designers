@@ -355,6 +355,11 @@ body {
 
 
 /***Designer Details ****/
+
+.jumbotron {
+  background-color: #fff;
+}
+
 .designer-detail {
   margin-top: 60px;
 }
@@ -434,10 +439,6 @@ body {
 }
 
 
-
-.jumbotron {
-  background-color: #fff;
-}
 @media(min-width:768px) {
   #wrapper {
     padding-left: 250px;

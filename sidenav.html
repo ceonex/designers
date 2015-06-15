@@ -1,23 +1,23 @@
 <template name="sidenav">
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                  <span href="/" class="white-logo top-logo pull-left"></span>  Design`ers
-                </li>
-                <li class="side-link">
-                  <a href="/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a>
-                </li>
-                <li class="side-link">
-                  <a href="/designers"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Designers</a>
-                </li>
-                {{#if currentUser}}
-                <li class="side-link">
-                  <a href="/addDesigner"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add Designer</a>
-                </li>
-
-                  {{> loginButtons}}
-                {{/if}}
-            </ul>
-        </div>
-
+  <div id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <span href="/" class="white-logo top-logo pull-left"></span> Design`ers
+      </li>
+      <li class="side-link">
+        <a href="/">
+          <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a>
+      </li>
+      <li class="side-link">
+        <a href="/designers">
+          <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Designers</a>
+      </li>
+      {{#if currentUser}}
+      <li class="side-link">
+        <a href="/addDesigner">
+          <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add Designer</a>
+      </li>
+      {{> loginButtons}} {{/if}}
+    </ul>
+  </div>
 </template>
