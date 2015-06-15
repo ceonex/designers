@@ -1,0 +1,65 @@
+<head>
+  <title>Designers App</title>
+</head>
+
+<body>
+
+</body>
+
+
+
+<template name="ApplicationLayout">
+  {{#if currentUser}}
+
+  <div id="wrapper">
+
+  {{> sidenav}}
+
+  <!-- Page Content -->
+         <div id="page-content-wrapper">
+           {{> topbar}}
+             <div class="container-fluid">
+                 <div class="row">
+                     <div class="col-lg-12">
+
+                       {{> yield}}
+
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <!-- /#page-content-wrapper -->
+
+     </div>
+     <!-- /#wrapper -->
+
+
+
+
+
+      {{else}}
+      <div class="container-fluid main-login">
+        <div class="row">
+          <div class="col-md-3 center-block">
+            <span href="/" class="logo">
+            Logo
+          </span>
+          <h1>Design`ers</h1>
+          </div>
+          <div class="col-xs-12  col-sm-6 col-md-3  center-block">
+            <ul>
+            {{> loginButtons}}
+          </ul>
+          </div>
+
+
+        </div>
+      </div>
+
+  {{/if}}
+
+</template>
+
+<template name="PostShow">
+  <h1>Post Show</h1>
+</template>

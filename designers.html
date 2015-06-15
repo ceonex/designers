@@ -1,0 +1,15 @@
+
+<template name="designers">
+
+  <div class="list-group designer-list">
+    {{#each designers}}
+  <a href="detail/{{_id}}" class="list-group-item">
+    <img src="{{#if file}}{{file}} {{else}} https://randomuser.me/api/portraits/med/women/13.jpg {{/if}}" class="pull-left"/>
+    <h4 class="list-group-item-heading">{{design.name}} {{lastName}}</h4>
+    <p class="list-group-item-text">{{description}}</p>
+
+  </a>
+  {{/each}}
+</div>
+
+</template>
