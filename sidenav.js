@@ -17,11 +17,17 @@ if (Meteor.isClient) {
     });
 
     // Trigger menu each time side menu is clicked
-    if ($(window).width() < 768) { // only trigger on small devices 
+    if ($(window).width() < 768) { // only trigger on small devices
       $(".sidebar-nav .side-link a").click(function(e) {
         $("#wrapper").toggleClass("toggled");
         $("#nav-icon").toggleClass('open');
       });
+
+      $("#wrapper.toggled #page-content-wrapper").click(function(e) {
+        $("#wrapper").toggleClass("toggled");
+        $("#nav-icon").toggleClass('open');
+      });
+
     }
 
   });

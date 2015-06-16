@@ -24,6 +24,9 @@ body {
   background-size: 100px 100px;
   margin: 50px auto 40px;
 }
+
+.main-home .logo  { margin: 10px auto 20px;}
+
 .top-logo {
   display: block;
   text-indent: -9999px;
@@ -51,7 +54,7 @@ body {
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.18);
 }
 
-.main-home h3 { font-size: 28px; font-weight: normal;}
+.main-home .logo + h3 { font-size: 28px; font-weight: normal;}
 
 .main-login h1 { text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.18); }
 
@@ -65,7 +68,7 @@ body {
   z-index: 0;
 }
 
-.submitProfile {
+.submitProfile, .action-btn {
   color: #fff;
   background-color: $action-color;
   border-color: transparent;
@@ -352,7 +355,25 @@ body {
   }
 }
 
+.profile-picture {
+  width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: -65px auto 5px auto;
+    border: 3px solid #FFF;
+}
 
+.edit-profile { margin-top: 45px;}
+
+.edit-profile .profile-top {     width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: -76px;
+
+    a { top: 38px;}
+ }
 
 /***Designer Details ****/
 .designer-detail {
@@ -367,7 +388,10 @@ body {
   position: absolute;
   top: 39px;
   border-radius: 50%;
-  padding: 8px 11px;
+  padding: 3px 4px;
+  line-height: 34px;
+  height: 45px;
+  width: 46px;
 }
 .profile-name {
   margin-top: 20px;
@@ -419,18 +443,36 @@ body {
   color: #fff;
 }
 
-.removeItem {
-  margin: 9px auto 5px;
+.contact-icons { padding-bottom: 50px;}
+
+.edit-controls {
+  margin: 4px auto 5px;
   position: absolute;
   left: 0;
   right: 0;
-  width: 40px;
+  width: 140px;
+}
+
+
+.removeItem {
+  margin:5px;
   border-radius: 50%;
   font-size: 16px;
   padding: 8px 9px;
   border: 3px solid #fff;
   line-height: 18px;
   background-color: $action-color;
+}
+
+.editItem {
+  margin:5px;
+  width: 40px;
+  border-radius: 50%;
+  font-size: 16px;
+  padding: 8px 9px;
+  border: 3px solid #fff;
+  line-height: 18px;
+  background-color: $dark-green;
 }
 
 

@@ -4,7 +4,9 @@ if (Meteor.isClient) {
   Template.designers.helpers({
     designers: function() { //Get list of designers
       return Designers.find({});
+
     }
+
   });
 
 
