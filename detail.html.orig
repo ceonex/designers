@@ -1,0 +1,67 @@
+
+<template name="detail">
+  <div class="jumbotron designer-detail">
+
+    <div class="row profile-top">
+    <div class="col-xs-5 col-md-2 profile-image">
+      <a type="button" class="btn btn-default btn-lg">
+        <span class="goback glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      </a>
+<img src="{{#if file}}{{file}} {{else}} https://randomuser.me/api/portraits/med/women/13.jpg {{/if}}" class="pull-left"/></div>
+    <div class="col-xs-7 col-md-10 profile-name">
+<<<<<<< HEAD
+      <h4>Hi, My Name is branch 2</h4>
+=======
+      <h4>Hi, My Name is test new branch edit</h4>
+>>>>>>> detail changes here
+      <h3>{{name}} {{lastName}}</h3>
+    </div>
+  </div>
+  <div class="row profile-details">
+    <div class="col-md-12">
+
+
+      <ul class="list-group">
+        <li  class="list-group-item">
+          <h4 class="list-group-item-heading">About Me</h4>
+          <p class="list-group-item-text">{{description}}</p>
+        </li>
+        <li  class="list-group-item">
+          <h4 class="list-group-item-heading">My Skills</h4>
+          <p class="list-group-item-text">{{skills}}</p>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+
+  <h4 class="list-group-item-heading">Get in touch</h4>
+<div class="btn-group btn-group-justified contact-icons" role="group" aria-label="...">
+  <div class="btn-group" role="group">
+    <a href="tel:{{phone}}" type="button" class="btn btn-default"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></a>
+  </div>
+  <div class="btn-group" role="group">
+    <a href="mailto:{{email}}"  type="button" class="btn btn-default"><span class="glyphicon glyphicon-send" aria-hidden="true"></span></a>
+  </div>
+  <div class="btn-group" role="group">
+    <a href="http://{{website}}" target="new" type="button" class="btn btn-default"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span></a>
+  </div>
+
+</div>
+
+<div class="col-md-12 edit-controls">
+  <button value="Submit" class="removeItem btn btn-danger">
+    <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+  </button>
+
+  <a href="../editDesigner/{{_id}}" class="editItem btn btn-success">
+    <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+  </a>
+</div>
+
+
+
+</div>
+
+</template>
